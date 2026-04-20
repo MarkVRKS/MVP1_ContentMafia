@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карьера - ContentMafia</title>
+    <link rel="stylesheet" href="warroom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <!-- Ornamental Background -->
+    <div class="ornamental-bg">
+        <div class="damask-pattern"></div>
+        <div class="vignette"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <div class="logo__crest">
+                        <svg viewBox="0 0 50 60" fill="none">
+                            <path d="M25 5L45 15L45 35L25 55L5 35L5 15L25 5Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="25" cy="30" r="8" fill="currentColor"/>
+                            <path d="M15 25L25 20L35 25" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M15 35L25 40L35 35" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <div class="logo__text">
+                        <span class="logo__main">ContentMafia</span>
+                        <span class="logo__tagline">Premium Content Services</span>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="warroom-landing.html" class="nav__link">Главная</a>
+                    <a href="about.html" class="nav__link">О нас</a>
+                    <a href="code-of-honor.html" class="nav__link">Кодекс</a>
+                    <a href="careers.html" class="nav__link">Карьера</a>
+                </nav>
+                <div class="header__actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                        <span class="theme-icon">◑</span>
+                    </button>
+                    <button class="btn btn--primary" onclick="window.location.href='warroom-landing.html#contact'">Связаться</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__ornament hero__ornament--top">👑</div>
+            <h1 class="hero__title">Присоединяйся к Семье</h1>
+            <p class="hero__subtitle">
+                Мы ищем профессионалов, которые разделяют наши ценности<br/>
+                и готовы работать над амбициозными проектами.
+            </p>
+            <div class="hero__ornament hero__ornament--bottom">👑</div>
+        </div>
+    </section>
+
+    <!-- Why Join Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__ornament">❦</span>
+                <h2 class="section__title">Почему ContentMafia?</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; max-width: 1200px; margin: 0 auto;">
+
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; color: var(--accent-red); margin-bottom: 1rem;">💰</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Достойная оплата</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Мы платим выше рынка и предлагаем бонусы за результаты. Твой вклад будет оценён по достоинству.
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; color: var(--accent-red); margin-bottom: 1rem;">🌍</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Удалённая работа</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Работай откуда угодно. Главное — результат, а не место, где ты находишься.
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; color: var(--accent-red); margin-bottom: 1rem;">📚</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Развитие</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Доступ к лучшим курсам, конференциям и инструментам. Мы инвестируем в твой рост.
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; color: var(--accent-red); margin-bottom: 1rem;">🎯</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Реальные проекты</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Работай над проектами, которые меняют бизнесы. Никакой рутины — только интересные задачи.
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; color: var(--accent-red); margin-bottom: 1rem;">⚡</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Технологии</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        AI, автоматизация, аналитика — используй самые современные инструменты в работе.
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; color: var(--accent-red); margin-bottom: 1rem;">🤝</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Сильная команда</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Работай с профессионалами, которые разделяют твои ценности и амбиции.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__ornament">❦</span>
+                <h2 class="section__title">Открытые позиции</h2>
+            </div>
+            <div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
+
+                <!-- Position 1 -->
+                <div style="background: var(--bg-primary); padding: 2.5rem; border-left: 4px solid var(--accent-red);">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                        <div>
+                            <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--text-primary); margin-bottom: 0.5rem;">Senior Full-Stack Developer</h3>
+                            <p style="color: var(--text-secondary);">Удалённо • Full-time</p>
+                        </div>
+                        <div style="font-size: 3rem;">👨‍💻</div>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        Разработка и поддержка наших SaaS-продуктов. Работа с React, Node.js, PostgreSQL, AI API.
+                        Создавай инструменты, которыми пользуются тысячи пользователей.
+                    </p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--accent-red); margin-bottom: 1rem; font-family: var(--font-heading);">Требования:</h4>
+                        <ul style="color: var(--text-secondary); line-height: 2; padding-left: 1.5rem;">
+                            <li>Опыт 3+ года в full-stack разработке</li>
+                            <li>Знание React, Node.js, TypeScript</li>
+                            <li>Опыт работы с AI API (OpenAI, Anthropic)</li>
+                            <li>Понимание DevOps практик</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn--primary" onclick="window.location.href='warroom-landing.html#contact'">Откликнуться</button>
+                </div>
+
+                <!-- Position 2 -->
+                <div style="background: var(--bg-primary); padding: 2.5rem; border-left: 4px solid var(--accent-red);">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                        <div>
+                            <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--text-primary); margin-bottom: 0.5rem;">Growth Marketing Specialist</h3>
+                            <p style="color: var(--text-secondary);">Удалённо • Full-time</p>
+                        </div>
+                        <div style="font-size: 3rem;">📊</div>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        Планирование и проведение маркетинговых операций для клиентов. Работа с данными,
+                        A/B тестирование, оптимизация конверсий и масштабирование успешных кампаний.
+                    </p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--accent-red); margin-bottom: 1rem; font-family: var(--font-heading);">Требования:</h4>
+                        <ul style="color: var(--text-secondary); line-height: 2; padding-left: 1.5rem;">
+                            <li>Опыт 2+ года в performance-маркетинге</li>
+                            <li>Знание аналитики (GA4, Amplitude, Mixpanel)</li>
+                            <li>Опыт работы с рекламными платформами</li>
+                            <li>Data-driven подход к принятию решений</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn--primary" onclick="window.location.href='warroom-landing.html#contact'">Откликнуться</button>
+                </div>
+
+                <!-- Position 3 -->
+                <div style="background: var(--bg-primary); padding: 2.5rem; border-left: 4px solid var(--accent-red);">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                        <div>
+                            <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--text-primary); margin-bottom: 0.5rem;">Content Strategist</h3>
+                            <p style="color: var(--text-secondary);">Удалённо • Full-time</p>
+                        </div>
+                        <div style="font-size: 3rem;">🎨</div>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        Создание контент-стратегий для клиентов, генерация вирусных идей, работа с AI-инструментами
+                        для оптимизации контента. Создавай контент, который работает.
+                    </p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--accent-red); margin-bottom: 1rem; font-family: var(--font-heading);">Требования:</h4>
+                        <ul style="color: var(--text-secondary); line-height: 2; padding-left: 1.5rem;">
+                            <li>Опыт 2+ года в контент-маркетинге</li>
+                            <li>Портфолио успешных кампаний</li>
+                            <li>Знание трендов и платформ (TikTok, Instagram, YouTube)</li>
+                            <li>Опыт работы с AI-инструментами (ChatGPT, Midjourney)</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn--primary" onclick="window.location.href='warroom-landing.html#contact'">Откликнуться</button>
+                </div>
+
+                <!-- Position 4 -->
+                <div style="background: var(--bg-primary); padding: 2.5rem; border-left: 4px solid var(--accent-red);">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+                        <div>
+                            <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--text-primary); margin-bottom: 0.5rem;">AI Engineer</h3>
+                            <p style="color: var(--text-secondary);">Удалённо • Full-time</p>
+                        </div>
+                        <div style="font-size: 3rem;">🤖</div>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        Интеграция AI в наши продукты, разработка промптов, fine-tuning моделей, работа с LLM API.
+                        Будь на переднем крае AI-технологий.
+                    </p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--accent-red); margin-bottom: 1rem; font-family: var(--font-heading);">Требования:</h4>
+                        <ul style="color: var(--text-secondary); line-height: 2; padding-left: 1.5rem;">
+                            <li>Опыт работы с LLM API (OpenAI, Anthropic, etc.)</li>
+                            <li>Знание Python, prompt engineering</li>
+                            <li>Понимание ML/AI концепций</li>
+                            <li>Опыт с RAG, embeddings, vector databases</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn--primary" onclick="window.location.href='warroom-landing.html#contact'">Откликнуться</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__ornament">❦</span>
+                <h2 class="section__title">Процесс найма</h2>
+            </div>
+            <div style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+
+                <div style="text-align: center; padding: 2rem; background: var(--bg-secondary);">
+                    <div style="font-size: 3rem; font-weight: 900; color: var(--accent-red); font-family: var(--font-display); margin-bottom: 1rem;">I</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1rem; color: var(--text-primary);">Заявка</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">Отправь резюме и портфолио</p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem; background: var(--bg-secondary);">
+                    <div style="font-size: 3rem; font-weight: 900; color: var(--accent-red); font-family: var(--font-display); margin-bottom: 1rem;">II</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1rem; color: var(--text-primary);">Скрининг</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">Короткий звонок для знакомства</p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem; background: var(--bg-secondary);">
+                    <div style="font-size: 3rem; font-weight: 900; color: var(--accent-red); font-family: var(--font-display); margin-bottom: 1rem;">III</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1rem; color: var(--text-primary);">Тестовое</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">Практическое задание</p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem; background: var(--bg-secondary);">
+                    <div style="font-size: 3rem; font-weight: 900; color: var(--accent-red); font-family: var(--font-display); margin-bottom: 1rem;">IV</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1rem; color: var(--text-primary);">Интервью</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">Встреча с командой</p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem; background: var(--bg-secondary);">
+                    <div style="font-size: 3rem; font-weight: 900; color: var(--accent-red); font-family: var(--font-display); margin-bottom: 1rem;">V</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1rem; color: var(--text-primary);">Оффер</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">Получи предложение!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--bg-secondary); text-align: center; padding: 100px 0;">
+        <div class="container">
+            <h2 style="font-family: var(--font-display); font-size: 3rem; margin-bottom: 1.5rem; color: var(--text-primary);">
+                Не нашёл подходящую позицию?
+            </h2>
+            <p style="font-size: 1.3rem; color: var(--text-secondary); margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Мы всегда открыты для талантливых людей. Отправь своё резюме,
+                и мы свяжемся с тобой, когда появится подходящая роль.
+            </p>
+            <button class="btn btn--primary btn--large" onclick="window.location.href='warroom-landing.html#contact'">
+                Отправить резюме
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="logo">
+                        <div class="logo__crest">
+                            <svg viewBox="0 0 50 60" fill="none">
+                                <path d="M25 5L45 15L45 35L25 55L5 35L5 15L25 5Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="25" cy="30" r="8" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="logo__text">
+                            <span class="logo__main">ContentMafia</span>
+                        </div>
+                    </div>
+                    <p class="footer__tagline">Premium Content Services</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__heading">Услуги</h4>
+                        <a href="warroom-landing.html#services" class="footer__link">Наши дела</a>
+                        <a href="warroom-landing.html#enterprise" class="footer__link">Для семей</a>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__heading">Семья</h4>
+                        <a href="about.html" class="footer__link">О нас</a>
+                        <a href="code-of-honor.html" class="footer__link">Кодекс чести</a>
+                        <a href="careers.html" class="footer__link">Карьера</a>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__heading">Связь</h4>
+                        <a href="warroom-landing.html#contact" class="footer__link">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 ContentMafia. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="warroom.js"></script>
+</body>
+</html>

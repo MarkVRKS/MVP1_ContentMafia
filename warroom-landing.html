@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContentMafia - La Famiglia Digitale</title>
+    <link rel="stylesheet" href="warroom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Элегантные шрифты для мафиозного стиля -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body data-theme="light">
+    <!-- Ornamental Background -->
+    <div class="ornamental-bg">
+        <div class="damask-pattern"></div>
+        <div class="vignette"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <div class="logo__crest">
+                        <svg viewBox="0 0 50 60" fill="none">
+                            <path d="M25 5L45 15L45 35L25 55L5 35L5 15L25 5Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="25" cy="30" r="8" fill="currentColor"/>
+                            <path d="M15 25L25 20L35 25" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M15 35L25 40L35 35" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <div class="logo__text">
+                        <span class="logo__main">ContentMafia</span>
+                        <span class="logo__tagline">Premium Content Services</span>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="#services" class="nav__link">Наши дела</a>
+                    <a href="about.html" class="nav__link">О нас</a>
+                    <a href="code-of-honor.html" class="nav__link">Кодекс</a>
+                    <a href="careers.html" class="nav__link">Карьера</a>
+                </nav>
+                <div class="header__actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                        <span class="theme-icon">◑</span>
+                    </button>
+                    <button class="btn btn--outline" id="loginBtn">Войти</button>
+                    <button class="btn btn--primary">Присоединиться</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__ornament hero__ornament--top">⚜</div>
+                <div class="hero__content">
+                    <div class="hero__badge">
+                        <span class="divider">◆</span>
+                        <span>Est. 2026</span>
+                        <span class="divider">◆</span>
+                    </div>
+                    <h1 class="hero__title">
+                        La Famiglia<br/>
+                        <span class="hero__title--accent">ContentMafia</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        Мы не просто предоставляем услуги.<br/>
+                        Мы создаём империи контента.
+                    </p>
+                    <div class="hero__quote">
+                        <div class="quote-mark">"</div>
+                        <p>Уважение, честь и качество — вот наши принципы</p>
+                        <div class="quote-mark quote-mark--end">"</div>
+                    </div>
+                    <div class="hero__actions">
+                        <button class="btn btn--large btn--primary">
+                            Стать частью семьи
+                        </button>
+                        <button class="btn btn--large btn--outline" id="enterpriseBtn">
+                            Для больших семей
+                        </button>
+                    </div>
+                </div>
+                <div class="hero__ornament hero__ornament--bottom">⚜</div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-ornament">◆ ◆ ◆</div>
+                    <h2 class="section-title">Наши операции</h2>
+                    <p class="section-subtitle">Каждый сервис — это наше дело чести</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="services-grid">
+                    <canvas id="connectionsCanvas" class="connections-canvas"></canvas>
+
+                    <!-- Service Card 1 -->
+                    <div class="service-card" data-service="promptagg">
+                        <div class="card-corner card-corner--tl"></div>
+                        <div class="card-corner card-corner--tr"></div>
+                        <div class="card-corner card-corner--bl"></div>
+                        <div class="card-corner card-corner--br"></div>
+
+                        <div class="service-card__header">
+                            <div class="service-card__number">I</div>
+                            <span class="service-card__badge badge--active">Активно</span>
+                        </div>
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">PromptAGG</h3>
+                        <div class="service-card__divider"></div>
+                        <p class="service-card__description">
+                            Профессиональный инструмент для управления контентом и генерации AI-промптов.
+                        </p>
+                        <div class="service-card__footer">
+                            <div class="service-card__price">1200₽<span>/мес</span></div>
+                            <button class="btn btn--sm btn--primary">Подключить</button>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="service-card" data-service="slicermafia">
+                        <div class="card-corner card-corner--tl"></div>
+                        <div class="card-corner card-corner--tr"></div>
+                        <div class="card-corner card-corner--bl"></div>
+                        <div class="card-corner card-corner--br"></div>
+
+                        <div class="service-card__header">
+                            <div class="service-card__number">II</div>
+                            <span class="service-card__badge badge--active">Активно</span>
+                        </div>
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M9 3v18M15 3v18M3 9h18M3 15h18"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">SlicerMafia</h3>
+                        <div class="service-card__divider"></div>
+                        <p class="service-card__description">
+                            Специализированный сервис для глубокой обработки и адаптации контента.
+                        </p>
+                        <div class="service-card__footer">
+                            <div class="service-card__price">500₽<span>/мес</span></div>
+                            <button class="btn btn--sm btn--primary">Подключить</button>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 3 - Featured -->
+                    <div class="service-card service-card--featured" data-service="contenthub">
+                        <div class="card-corner card-corner--tl"></div>
+                        <div class="card-corner card-corner--tr"></div>
+                        <div class="card-corner card-corner--bl"></div>
+                        <div class="card-corner card-corner--br"></div>
+
+                        <div class="service-card__header">
+                            <div class="service-card__number">III</div>
+                            <span class="service-card__badge badge--premium">Premium</span>
+                        </div>
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="7" height="7"/>
+                                <rect x="14" y="3" width="7" height="7"/>
+                                <rect x="14" y="14" width="7" height="7"/>
+                                <rect x="3" y="14" width="7" height="7"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">ContentHub</h3>
+                        <div class="service-card__divider"></div>
+                        <p class="service-card__description">
+                            Централизованная рабочая среда и экосистема для цифрового маркетинга.
+                        </p>
+                        <div class="service-card__footer">
+                            <div class="service-card__price">2000₽<span>/мес</span></div>
+                            <button class="btn btn--sm btn--primary">Подключить</button>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="service-card" data-service="ghostwriter">
+                        <div class="card-corner card-corner--tl"></div>
+                        <div class="card-corner card-corner--tr"></div>
+                        <div class="card-corner card-corner--bl"></div>
+                        <div class="card-corner card-corner--br"></div>
+
+                        <div class="service-card__header">
+                            <div class="service-card__number">IV</div>
+                            <span class="service-card__badge badge--new">Новое</span>
+                        </div>
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">GhostWriter</h3>
+                        <div class="service-card__divider"></div>
+                        <p class="service-card__description">
+                            AI-копирайтер. Создаём тексты, которые работают на вас.
+                        </p>
+                        <div class="service-card__footer">
+                            <div class="service-card__price">1500₽<span>/мес</span></div>
+                            <button class="btn btn--sm btn--primary">Подключить</button>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="service-card" data-service="vaultkeeper">
+                        <div class="card-corner card-corner--tl"></div>
+                        <div class="card-corner card-corner--tr"></div>
+                        <div class="card-corner card-corner--bl"></div>
+                        <div class="card-corner card-corner--br"></div>
+
+                        <div class="service-card__header">
+                            <div class="service-card__number">V</div>
+                            <span class="service-card__badge badge--secure">Защита</span>
+                        </div>
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="11" width="18" height="11" rx="2"/>
+                                <path d="M7 11V7a5 5 0 0110 0v4"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">VaultKeeper</h3>
+                        <div class="service-card__divider"></div>
+                        <p class="service-card__description">
+                            Хранилище для ваших секретов. 500 ГБ с шифрованием.
+                        </p>
+                        <div class="service-card__footer">
+                            <div class="service-card__price">800₽<span>/мес</span></div>
+                            <button class="btn btn--sm btn--primary">Подключить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enterprise Section -->
+        <section class="enterprise" id="enterprise">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-ornament">◆ ◆ ◆</div>
+                    <h2 class="section-title">Для больших семей</h2>
+                    <p class="section-subtitle">Индивидуальные условия для вашего бизнеса</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="enterprise__content">
+                    <div class="enterprise__text">
+                        <h3>Преимущества для предприятий</h3>
+                        <ul class="enterprise__features">
+                            <li><span class="feature-icon">◆</span> Неограниченное количество пользователей</li>
+                            <li><span class="feature-icon">◆</span> Персональный консильери</li>
+                            <li><span class="feature-icon">◆</span> SLA 99.99% — наше слово закон</li>
+                            <li><span class="feature-icon">◆</span> Кастомная интеграция</li>
+                            <li><span class="feature-icon">◆</span> Приоритетная поддержка 24/7</li>
+                            <li><span class="feature-icon">◆</span> Обучение вашей команды</li>
+                            <li><span class="feature-icon">◆</span> Выделенный сервер</li>
+                            <li><span class="feature-icon">◆</span> Белый label (ваш брендинг)</li>
+                        </ul>
+                    </div>
+                    <div class="enterprise__form">
+                        <h3>Оставьте заявку</h3>
+                        <p class="form-subtitle">Мы свяжемся с вами в течение 24 часов</p>
+                        <form id="enterpriseForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email компании" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Телефон" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Название компании" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="">Размер команды</option>
+                                    <option value="10-50">10-50 человек</option>
+                                    <option value="50-200">50-200 человек</option>
+                                    <option value="200+">200+ человек</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Расскажите о ваших задачах" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full">
+                                Отправить заявку
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial">
+            <div class="container">
+                <div class="testimonial__content">
+                    <div class="quote-mark-large">"</div>
+                    <blockquote>
+                        <p>Мы не делаем предложений, от которых можно отказаться.<br/>Мы делаем сервисы, от которых невозможно отказаться.</p>
+                    </blockquote>
+                    <div class="testimonial__author">
+                        <div class="author__name">Galaktion Kuchava</div>
+                        <div class="author__title">Основатель ContentMafia</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__section footer__section--main">
+                    <div class="logo">
+                        <div class="logo__crest">
+                            <svg viewBox="0 0 50 60" fill="none">
+                                <path d="M25 5L45 15L45 35L25 55L5 35L5 15L25 5Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="25" cy="30" r="8" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="logo__text">
+                            <span class="logo__main">ContentMafia</span>
+                            <span class="logo__subtitle">La Famiglia Digitale</span>
+                        </div>
+                    </div>
+                    <p class="footer__motto">Уважение. Честь. Качество.</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Операции</h4>
+                    <a href="#services">Наши дела</a>
+                    <a href="#enterprise">Для семей</a>
+                    <a href="#">Документация</a>
+                </div>
+                <div class="footer__section">
+                    <h4>Семья</h4>
+                    <a href="about.html">О нас</a>
+                    <a href="code-of-honor.html">Кодекс чести</a>
+                    <a href="careers.html">Карьера</a>
+                </div>
+                <div class="footer__section">
+                    <h4>Связь</h4>
+                    <a href="mailto:boss@contentmafia.ru">boss@contentmafia.ru</a>
+                    <a href="#">Telegram</a>
+                    <a href="#">Статус системы</a>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 ContentMafia. Все права защищены семьёй.</p>
+                <div class="footer__links">
+                    <a href="#">Конфиденциальность</a>
+                    <span class="divider">◆</span>
+                    <a href="#">Условия</a>
+                    <span class="divider">◆</span>
+                    <a href="#" id="devEasterEgg" style="opacity: 0.3; font-size: 0.8rem;">◇</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modal -->
+    <div class="modal" id="serviceModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modalClose">✕</button>
+            <div class="modal__body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content modal__content--small">
+            <button class="modal__close" id="loginModalClose">✕</button>
+            <div class="modal__body">
+                <h3>Вход в семью</h3>
+                <div class="section-divider"></div>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Пароль" required>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Войти</button>
+                    <p class="form-footer">
+                        Нет аккаунта? <a href="#" id="showRegister">Присоединиться к семье</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="warroom.js"></script>
+</body>
+</html>

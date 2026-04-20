@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - ContentMafia</title>
+    <link rel="stylesheet" href="warroom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <!-- Ornamental Background -->
+    <div class="ornamental-bg">
+        <div class="damask-pattern"></div>
+        <div class="vignette"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <div class="logo__crest">
+                        <svg viewBox="0 0 50 60" fill="none">
+                            <path d="M25 5L45 15L45 35L25 55L5 35L5 15L25 5Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="25" cy="30" r="8" fill="currentColor"/>
+                            <path d="M15 25L25 20L35 25" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M15 35L25 40L35 35" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <div class="logo__text">
+                        <span class="logo__main">ContentMafia</span>
+                        <span class="logo__tagline">Premium Content Services</span>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="warroom-landing.html" class="nav__link">Главная</a>
+                    <a href="about.html" class="nav__link">О нас</a>
+                    <a href="code-of-honor.html" class="nav__link">Кодекс</a>
+                    <a href="careers.html" class="nav__link">Карьера</a>
+                </nav>
+                <div class="header__actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                        <span class="theme-icon">◑</span>
+                    </button>
+                    <button class="btn btn--primary" onclick="window.location.href='warroom-landing.html#contact'">Связаться</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__ornament hero__ornament--top">❦</div>
+            <h1 class="hero__title">О Семье</h1>
+            <p class="hero__subtitle">
+                Мы не просто агентство. Мы — Семья,<br/>
+                которая защищает интересы своих клиентов.
+            </p>
+            <div class="hero__ornament hero__ornament--bottom">❦</div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__ornament">❦</span>
+                <h2 class="section__title">Наша миссия</h2>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.3rem; line-height: 2; color: var(--text-secondary); margin-bottom: 2rem;">
+                    В мире цифрового контента царит хаос. Каждый день появляются новые платформы,
+                    тренды меняются со скоростью света, а конкуренция становится всё жёстче.
+                </p>
+                <p style="font-size: 1.3rem; line-height: 2; color: var(--text-secondary);">
+                    ContentMafia приносит порядок в этот хаос. Мы защищаем интересы наших клиентов,
+                    используя проверенные методы и передовые технологии. Ваш успех — наша честь.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__ornament">❦</span>
+                <h2 class="section__title">Принципы Семьи</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; max-width: 1200px; margin: 0 auto;">
+
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; color: var(--accent-red); margin-bottom: 1rem;">⚔️</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Честь</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Мы держим слово. Если обещали результат — доставим его. Наша репутация дороже любых денег.
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; color: var(--accent-red); margin-bottom: 1rem;">🤝</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Лояльность</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Мы не бросаем своих. Каждый клиент становится частью Семьи и получает нашу полную поддержку.
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; color: var(--accent-red); margin-bottom: 1rem;">🔒</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Конфиденциальность</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Omertà — закон молчания. Ваши секреты останутся секретами. Никаких утечек, никаких компромиссов.
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; color: var(--accent-red); margin-bottom: 1rem;">💎</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Качество</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Мы не делаем халтуру. Каждая операция планируется и выполняется с ювелирной точностью.
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; color: var(--accent-red); margin-bottom: 1rem;">⚡</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Эффективность</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Время — деньги. Мы действуем быстро, но без спешки. Каждое движение просчитано.
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding: 2rem;">
+                    <div style="font-size: 3rem; color: var(--accent-red); margin-bottom: 1rem;">👑</div>
+                    <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Власть</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Мы даём вам контроль над вашим цифровым присутствием. Вы — босс, мы — ваши консильери.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__ornament">❦</span>
+                <h2 class="section__title">История Семьи</h2>
+            </div>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div style="border-left: 3px solid var(--accent-red); padding-left: 2rem; margin-bottom: 3rem;">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--accent-red); margin-bottom: 1rem;">2020 — Основание</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem;">
+                        Семья была основана группой профессионалов, которые устали от хаоса в индустрии контент-маркетинга.
+                        Мы решили создать организацию, где правят честь, качество и результат.
+                    </p>
+                </div>
+
+                <div style="border-left: 3px solid var(--accent-red); padding-left: 2rem; margin-bottom: 3rem;">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--accent-red); margin-bottom: 1rem;">2021-2023 — Расширение</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem;">
+                        Мы начали с малого — несколько клиентов, несколько услуг. Но слово о нас распространилось быстро.
+                        Те, кто работал с нами, рекомендовали нас своим партнёрам. Семья росла.
+                    </p>
+                </div>
+
+                <div style="border-left: 3px solid var(--accent-red); padding-left: 2rem;">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--accent-red); margin-bottom: 1rem;">2024-2026 — Доминирование</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem;">
+                        Сегодня ContentMafia — это не просто агентство. Это экосистема инструментов, сервисов и экспертизы.
+                        Мы помогаем сотням компаний доминировать в своих нишах. И это только начало.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--bg-secondary); text-align: center; padding: 100px 0;">
+        <div class="container">
+            <h2 style="font-family: var(--font-display); font-size: 3rem; margin-bottom: 1.5rem; color: var(--text-primary);">
+                Готовы стать частью Семьи?
+            </h2>
+            <p style="font-size: 1.3rem; color: var(--text-secondary); margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Присоединяйтесь к тем, кто уже доверил нам свой цифровой успех
+            </p>
+            <button class="btn btn--primary btn--large" onclick="window.location.href='warroom-landing.html#contact'">
+                Связаться с нами
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="logo">
+                        <div class="logo__crest">
+                            <svg viewBox="0 0 50 60" fill="none">
+                                <path d="M25 5L45 15L45 35L25 55L5 35L5 15L25 5Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="25" cy="30" r="8" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="logo__text">
+                            <span class="logo__main">ContentMafia</span>
+                        </div>
+                    </div>
+                    <p class="footer__tagline">Premium Content Services</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__heading">Услуги</h4>
+                        <a href="warroom-landing.html#services" class="footer__link">Наши дела</a>
+                        <a href="warroom-landing.html#enterprise" class="footer__link">Для семей</a>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__heading">Семья</h4>
+                        <a href="about.html" class="footer__link">О нас</a>
+                        <a href="code-of-honor.html" class="footer__link">Кодекс чести</a>
+                        <a href="careers.html" class="footer__link">Карьера</a>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__heading">Связь</h4>
+                        <a href="warroom-landing.html#contact" class="footer__link">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 ContentMafia. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="warroom.js"></script>
+</body>
+</html>
