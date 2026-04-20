@@ -493,9 +493,10 @@ body {
 
 /* === HERO SECTION === */
 .hero {
-    padding: 180px 0 120px;
+    padding: 200px 0 140px;
     text-align: center;
     position: relative;
+    min-height: 60vh;
 }
 
 .hero__ornament {
@@ -509,11 +510,11 @@ body {
 }
 
 .hero__ornament--top {
-    top: 140px;
+    top: 80px;
 }
 
 .hero__ornament--bottom {
-    bottom: 40px;
+    bottom: 60px;
 }
 
 .hero__badge {
@@ -1054,9 +1055,20 @@ blockquote p {
 
 /* === FOOTER === */
 .footer {
-    padding: 4rem 0 2rem;
-    background: var(--bg-secondary);
-    border-top: 2px solid var(--accent-red);
+    padding: 5rem 0 2rem;
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, #000000 100%);
+    border-top: 3px solid var(--accent-red);
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-red), transparent);
 }
 
 .footer__top {
@@ -1068,54 +1080,86 @@ blockquote p {
 
 .footer__content {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 4rem;
-    margin-bottom: 3rem;
+    grid-template-columns: 1.5fr 2.5fr;
+    gap: 5rem;
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid rgba(139, 0, 0, 0.3);
 }
 
 .footer__brand {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .footer__tagline {
     color: var(--text-secondary);
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
 .footer__links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .footer__column {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem;
 }
 
 .footer__heading {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
+    letter-spacing: 0.15em;
+    margin-bottom: 1rem;
+    color: var(--accent-red);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer__heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: var(--accent-red);
 }
 
 .footer__link {
     color: var(--text-secondary);
     text-decoration: none;
-    transition: color var(--transition);
-    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 0;
+}
+
+.footer__link::before {
+    content: '▸';
+    position: absolute;
+    left: -15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: var(--accent-red);
 }
 
 .footer__link:hover {
     color: var(--accent-red);
+    padding-left: 15px;
+}
+
+.footer__link:hover::before {
+    opacity: 1;
+    left: 0;
 }
 
 .footer__section--main {
@@ -1126,17 +1170,18 @@ blockquote p {
     margin-top: 1rem;
     color: var(--accent-red);
     font-style: italic;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-family: var(--font-heading);
 }
 
 .footer__section h4 {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 1.5rem;
-    color: var(--text-primary);
+    color: var(--accent-red);
 }
 
 .footer__section a {
@@ -1153,8 +1198,8 @@ blockquote p {
 
 .footer__divider {
     height: 2px;
-    background: var(--border-color);
-    margin: 2rem 0;
+    background: linear-gradient(90deg, transparent, var(--accent-red), transparent);
+    margin: 3rem 0;
 }
 
 .footer__bottom {
@@ -1162,9 +1207,13 @@ blockquote p {
     justify-content: space-between;
     align-items: center;
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     padding-top: 2rem;
-    border-top: 1px solid var(--border-color);
+}
+
+.footer__bottom p {
+    font-family: var(--font-heading);
+    font-style: italic;
 }
 
 /* === TEAM CARDS === */
