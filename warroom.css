@@ -493,16 +493,19 @@ body {
 
 /* === HERO SECTION === */
 .hero {
-    padding: 200px 0 140px;
+    padding: 220px 0 160px;
     text-align: center;
     position: relative;
-    min-height: 60vh;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero__ornament {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--accent-red);
-    opacity: 0.3;
+    opacity: 0.2;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -510,11 +513,11 @@ body {
 }
 
 .hero__ornament--top {
-    top: 80px;
+    top: 60px;
 }
 
 .hero__ornament--bottom {
-    bottom: 60px;
+    bottom: 80px;
 }
 
 .hero__badge {
@@ -1055,8 +1058,8 @@ blockquote p {
 
 /* === FOOTER === */
 .footer {
-    padding: 5rem 0 2rem;
-    background: linear-gradient(180deg, var(--bg-secondary) 0%, #000000 100%);
+    padding: 6rem 0 3rem;
+    background: var(--bg-secondary);
     border-top: 3px solid var(--accent-red);
     position: relative;
 }
@@ -1074,54 +1077,56 @@ blockquote p {
 .footer__top {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 3rem;
-    margin-bottom: 3rem;
+    gap: 4rem;
+    margin-bottom: 4rem;
 }
 
 .footer__content {
     display: grid;
-    grid-template-columns: 1.5fr 2.5fr;
-    gap: 5rem;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
     margin-bottom: 4rem;
-    padding-bottom: 3rem;
-    border-bottom: 2px solid rgba(139, 0, 0, 0.3);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer__brand {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .footer__tagline {
     color: var(--text-secondary);
     font-style: italic;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.8;
+    font-family: var(--font-heading);
 }
 
 .footer__links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .footer__column {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.2rem;
 }
 
 .footer__heading {
     font-family: var(--font-display);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: var(--accent-red);
     position: relative;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.8rem;
 }
 
 .footer__heading::after {
@@ -1129,8 +1134,8 @@ blockquote p {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 40px;
-    height: 2px;
+    width: 50px;
+    height: 3px;
     background: var(--accent-red);
 }
 
@@ -1138,15 +1143,16 @@ blockquote p {
     color: var(--text-secondary);
     text-decoration: none;
     transition: all 0.3s ease;
-    font-size: 1rem;
+    font-size: 1.05rem;
     position: relative;
     padding-left: 0;
+    display: inline-block;
 }
 
 .footer__link::before {
     content: '▸';
     position: absolute;
-    left: -15px;
+    left: -20px;
     opacity: 0;
     transition: all 0.3s ease;
     color: var(--accent-red);
@@ -1154,7 +1160,7 @@ blockquote p {
 
 .footer__link:hover {
     color: var(--accent-red);
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .footer__link:hover::before {
@@ -1167,20 +1173,20 @@ blockquote p {
 }
 
 .footer__motto {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     color: var(--accent-red);
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: var(--font-heading);
 }
 
 .footer__section h4 {
     font-family: var(--font-display);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: var(--accent-red);
 }
 
@@ -1188,8 +1194,9 @@ blockquote p {
     display: block;
     color: var(--text-secondary);
     text-decoration: none;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     transition: color var(--transition);
+    font-size: 1.05rem;
 }
 
 .footer__section a:hover {
@@ -1206,9 +1213,13 @@ blockquote p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    padding-top: 2rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    padding-top: 3rem;
+    border-top: 2px solid rgba(139, 0, 0, 0.2);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer__bottom p {
