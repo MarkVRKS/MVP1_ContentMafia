@@ -994,3 +994,59 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// ============================================
+// SCROLL ANIMATIONS
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Intersection Observer для анимаций при скролле
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.animation = entry.target.style.animation || 'fadeInUp 0.8s ease-out forwards';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Наблюдаем за всеми элементами с классом animate-on-scroll
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        observer.observe(el);
+    });
+
+    // Добавляем класс animate-on-scroll к карточкам команды
+    document.querySelectorAll('.team-card').forEach((card, index) => {
+        card.classList.add('animate-on-scroll');
+        if (index > 0) {
+            card.classList.add(`delay-${index}`);
+        }
+    });
+
+    // Плавное появление секций
+    document.querySelectorAll('.section').forEach((section, index) => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        
+        setTimeout(() => {
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        sectionObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.05 });
+            
+            sectionObserver.observe(section);
+        }, 100);
+    });
+});
